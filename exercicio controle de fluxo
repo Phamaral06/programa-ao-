@@ -1,0 +1,24 @@
+def bubble_sort(lista):
+    n = len(lista)
+    # Percorre todos os elementos da lista
+    for i in range(n):
+        # Últimos i elementos já estão em ordem
+        for j in range(0, n-i-1):
+            # Troca se o elemento encontrado for maior que o próximo
+            if lista[j] > lista[j + 1]:
+                lista[j], lista[j + 1] = lista[j + 1], lista[j]
+
+# Exemplo de uso
+lista = [64, 34, 25, 12, 22, 11, 90]
+bubble_sort(lista)
+print("Lista ordenada:", lista)
+
+Como funciona:
+O algoritmo percorre a lista várias vezes.
+Em cada passagem, ele compara elementos adjacentes e os troca se estiverem na ordem errada.
+Com cada passagem, o maior elemento "borbulha" para o final da lista.
+O processo se repete até que não haja mais trocas, indicando que a lista está ordenada.
+
+Saída do código:
+Ao executar esse código, a saída será:
+Lista ordenada: [11, 12, 22, 25, 34, 64, 90]
