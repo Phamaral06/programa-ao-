@@ -1,0 +1,12 @@
+def imprimir_vogais(frase):
+    # Definindo as vogais
+    vogais = 'aeiouAEIOU'
+    # Filtrando as vogais
+    resultado = ''.join([letra for letra in frase if letra in vogais])
+    print(resultado)
+
+# Usando a palavra "Pedro"
+palavra = "Pedro"
+imprimir_vogais(palavra)
+
+Saída do código; eo 
